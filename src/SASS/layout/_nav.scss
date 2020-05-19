@@ -16,17 +16,58 @@
   &__li:not(:last-child) {
     margin-right: 2em;
   }
+  &__li {
+    @media (max-width: $bp-small) {
+      display: none;
+    }
+  }
 
   &__link,
   &__link:visited,
   &__link:link {
     font-size: 2rem;
     font-weight: 300;
-    color: var(--dark-gray);
+    color: var(--tertiary-color);
   }
   &__link:hover,
   &__link:active,
   &__link:focus {
-    opacity: 0.4;
+    opacity: 0 0.4;
+  }
+  &__darktheme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  label {
+    position: relative;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: var(--dark-gray-3);
+    display: block;
+    border-radius: 100px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 5px;
+      width: 17px;
+      height: 17px;
+      background: var(--bg);
+      border-radius: 90px;
+      transition: all 0.2s;
+    }
+  }
+  input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
   }
 }

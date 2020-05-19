@@ -3,7 +3,13 @@
   grid-column: 4 / 12;
   display: flex;
 
-  &__photo {
+  @media (max-width: $bp-small) {
+    grid-column: 2 / -1;
+  }
+
+  @media (max-width: $bp-smallest) {
+    flex-direction: column;
+    grid-column: 1 /-1;
   }
   &__img {
     width: 100%;
@@ -11,6 +17,11 @@
   }
   &__content {
     margin-left: 6em;
+
+    @media (max-width: $bp-smallest) {
+      margin-top: 2em;
+      margin-left: 0;
+    }
   }
   &__btns {
     margin-top: 5em;
@@ -25,14 +36,24 @@
   align-items: center;
   margin-top: 5em;
   grid-column: 4 / 12;
-
   display: grid;
   grid-template-columns: auto 20rem;
+
+  @media (max-width: $bp-small) {
+    grid-template-columns: auto 15rem;
+    grid-column: 2 / -1;
+  }
+
+  @media (max-width: $bp-smallest) {
+    grid-template-columns: auto 8rem;
+    grid-column: 1 /-1;
+  }
 
   &__icon {
     transition: 200ms ease-in;
     display: flex;
     justify-content: center;
+
     &:focus-within,
     &:focus,
     &:hover {

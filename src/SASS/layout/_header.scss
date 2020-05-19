@@ -3,6 +3,9 @@
   position: relative;
   min-height: 90vh;
 
+  @media (max-width: $bp-small) {
+    min-height: 80vh;
+  }
   &__content {
     display: flex;
     flex-direction: column;

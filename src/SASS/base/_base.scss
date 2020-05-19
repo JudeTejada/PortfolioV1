@@ -8,16 +8,25 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @media (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 340px) {
+    font-size: 45%;
+  }
 }
 body {
   overflow-x: hidden;
   line-height: 1.6;
   font-family: "Ubuntu", sans-serif;
+  background: var(--bg);
 }
 ::-moz-selection,
 ::selection {
   background: var(--tertiary-color);
-  color: #fff;
+  color: var(--bg);
 }
 input::-moz-focus-inner {
   border: 0;
@@ -25,7 +34,7 @@ input::-moz-focus-inner {
 
 a {
   text-decoration: none;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   outline: none;
 }
 

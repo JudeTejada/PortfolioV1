@@ -15,7 +15,25 @@
   --heading-6: 2rem;
   --body-text: 1.8rem;
   --button-text: 1.6rem;
-  --placeholder-text: 1.4rem;
+  --bg: #fff;
+}
+.dark {
+  --primary-color: #f7f7f7;
+  --secondary-color: #eee;
+  --tertiary-color: #e5e5e5;
+  --dark-gray-2: #bebebe;
+  --dark-gray-3: #cacaca;
+  --light-gray: #c4c4c4;
+
+  --bg: #121212;
+
+  .project__img {
+    filter: brightness(80%);
+
+    &:hover {
+      filter: brightness(100%);
+    }
+  }
 }
 
 //1200px / 16
