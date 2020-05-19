@@ -3,6 +3,9 @@
   font-weight: 700;
   line-height: 1;
   color: var(--primary-color);
+  &--contact {
+    grid-column: 1 / -1;
+  }
 }
 .heading--2 {
   font-size: 4rem;
@@ -30,4 +33,9 @@
   &--hero {
     max-width: 46rem;
   }
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: var(--secondary-color);
 }

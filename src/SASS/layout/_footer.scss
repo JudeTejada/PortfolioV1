@@ -1,0 +1,10 @@
+.footer {
+  margin-top: 27vh;
+  padding: 3em 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

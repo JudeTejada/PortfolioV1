@@ -29,9 +29,7 @@
   display: grid;
   grid-template-columns: auto 200px;
 
-  img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &__icon {
+    text-align: center;
   }
 }

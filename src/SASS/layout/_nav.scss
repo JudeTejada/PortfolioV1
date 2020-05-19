@@ -12,10 +12,7 @@
     align-items: center;
     transition: 200ms ease-in;
   }
-  &__logo {
-    font-size: 2.5rem;
-    font-weight: var(--secondary-color);
-  }
+
   &__li:not(:last-child) {
     margin-right: 2em;
   }
