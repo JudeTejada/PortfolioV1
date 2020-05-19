@@ -1,0 +1,28 @@
+.white {
+  --primary-color: #121212;
+  --secondary-color: #222;
+  --tertiary-color: #333;
+  --dark-gray: #444;
+  --light-gray: #444;
+
+  --heading-1: 9.6rem;
+  --heading-2: 6rem;
+  --heading-3: 4.8rem;
+  --heading-4: 3.4rem;
+  --heading-5: 2.4rem;
+  --heading-6: 2rem;
+  --body-text: 1.8rem;
+  --button-text: 1.6rem;
+  --placeholder-text: 1.4rem;
+}
+
+//1200px / 16
+$bp-largest: 75em;
+//1100
+$bp-large: 68.75em;
+//900 / 16
+$bp-medium: 68.75em;
+//600 / 16
+$bp-small: 37.5em;
+//500px / 16
+$bp-smallest: 31.25em;
