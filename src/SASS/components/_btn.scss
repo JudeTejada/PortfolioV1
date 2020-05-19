@@ -8,6 +8,7 @@
   transition: 200ms ease;
   border: none;
   background: transparent;
+  cursor: pointer;
   &--primary {
     background-color: var(--primary-color);
 
@@ -15,7 +16,9 @@
       color: #fff;
     }
 
-    &:hover {
+    &:hover,
+    &:focus-within,
+    &:focus {
       opacity: 0.7;
     }
   }
@@ -24,7 +27,9 @@
     color: var(--primary-color);
     border: 1px solid currentColor;
 
-    &:hover {
+    &:hover,
+    &:focus-within,
+    &:focus {
       background: var(--primary-color);
       a {
         color: #fff;

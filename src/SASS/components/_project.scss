@@ -27,9 +27,16 @@
   grid-column: 4 / 12;
 
   display: grid;
-  grid-template-columns: auto 200px;
+  grid-template-columns: auto 20rem;
 
   &__icon {
-    text-align: center;
+    transition: 200ms ease-in;
+    display: flex;
+    justify-content: center;
+    &:focus-within,
+    &:focus,
+    &:hover {
+      opacity: 0.4;
+    }
   }
 }

@@ -15,12 +15,16 @@
       <!-- START OF NAV -->
       <nav class="nav">
         <div class="nav__content">
-          <a href="#" class="logo"> Jude Tejada</a>
+          <a href="#" class="logo" role="button" tabindex="0"> Jude Tejada</a>
 
 
           <ul class="nav__ul">
-            <li class="nav__li"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__li"><a href="#" class="nav__link">Projects</a></li>
+            <li class="nav__li" role="navigation">
+              <a href="#about" class="nav__link" title="Link to the about page">About</a>
+            </li>
+            <li class="nav__li" role="navigation">
+              <a href="#projects" class="nav__link" title="link to my project page">Projects</a>
+            </li>
           </ul>
         </div> <!-- nav -- Content-->
       </nav>
@@ -34,13 +38,16 @@
             aenean
             augue a Praesent congue.</p>
         </div>
-        <button class="btn btn--outline">See my Works</button>
+        <button class="btn btn--outline">
+          <a href="#projects" title="Link to go to project section"> See my Works</a>
+
+        </button>
       </header>
       <!--Container-->
     </div>
 
     <!-- ABOUT CONTAINER -->
-    <section class="about container">
+    <section class="about container" id="about">
       <div class="about__content">
         <h2 class="heading--2">About me</h2>
 
@@ -63,7 +70,7 @@
     </section>
 
     <!-- PROJECT CONTAINER -->
-    <section class="projects container">
+    <section class="projects container" id="projects">
       <section class="projects__content">
         <h2 class="heading--2">Featured Projects</h2>
         <!--PROJECT-->
@@ -72,18 +79,20 @@
             <img src="../src/assets/work1.jpg" alt="Fiddles Project" class="project__img">
           </figure>
 
-          <article class="project__content">
+          <article class="project__content" role="button" tabindex="0">
             <h4 class="heading--4">Fiddles</h4>
-            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae et massa vitae nullam
-              velit. Ut in amet
-              tincidunt dignissim vestibulum.</p>
+            <p class="paragraph">A web app that I made with plain JavaScript helping other developers to help them find
+              ideas for their next project.
+            </p>
 
             <div class="project__btns">
               <button class="btn btn--primary mr-1">
-                <a href="#">See Live</a>
+                <a href="https://fiddles.netlify.app/" target="_blank" title="Link that goes to fiddles project">See
+                  Live</a>
               </button>
               <button class="btn btn--secondary">
-                <a href="#">View Repo</a>
+                <a href="https://github.com/JudeTejada/Fiddles" target="_blank"
+                  title="Link that goes to fiddles github repository">View Repo</a>
               </button>
             </div>
           </article>
@@ -96,18 +105,19 @@
             <img src="../src/assets/work2.jpg" alt="Movie Library Project" class="project__img">
           </figure>
 
-          <article class="project__content">
+          <article class="project__content" role="button" tabindex="0">
             <h4 class="heading--4">Movie Library</h4>
-            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae et massa vitae nullam
-              velit. Ut in amet
-              tincidunt dignissim vestibulum.</p>
+            <p class="paragraph">Web application made with plain JavaScript to search for a movie, you can save a
+              favorite movie and get details about a movie.</p>
 
             <div class="project__btns">
               <button class="btn btn--primary mr-1">
-                <a href="#">See Live</a>
+                <a href="https://moviefinder19.netlify.app/" target="_blank"
+                  title="Link that goes to movieFinder site">See Live</a>
               </button>
               <button class="btn btn--secondary">
-                <a href="#">View Repo</a>
+                <a href="https://moviefinder19.netlify.app/" target="_blank"
+                  title="link to go to movieFinder github repository">View Repo</a>
               </button>
             </div>
           </article>
@@ -121,18 +131,19 @@
             <img src="../src/assets/work3.jpg" alt="Findhub Project" class="project__img">
           </figure>
 
-          <article class="project__content">
+          <article class="project__content" role="button" tabindex="0">
             <h4 class="heading--4">Findhub</h4>
-            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae et massa vitae nullam
-              velit. Ut in amet
-              tincidunt dignissim vestibulum.</p>
+            <p class="paragraph">A nicer profile for seeing your github account, you can view your top languages and
+              most starred in a visualized chart. </p>
 
             <div class="project__btns">
               <button class="btn btn--primary mr-1">
-                <a href="#">See Live</a>
+                <a href="https://findhub.netlify.app/" target="_blank" title="link to go to findhub live site">See
+                  Live</a>
               </button>
               <button class="btn btn--secondary">
-                <a href="#">View Repo</a>
+                <a href="https://github.com/JudeTejada/JavaScript-Web-Projects/tree/master/githubProfile"
+                  target="_blank" title="link to go to findhub github repository">View Repo</a>
               </button>
             </div>
           </article>
@@ -151,15 +162,15 @@
           <!-- SMALL PROJECT START -->
           <article class="smallproject">
 
-            <div class="smallproject__left">
+            <div class="smallproject__left" role="button" tabindex="0">
               <h4 class="heading--4">Katie Holmes Website</h4>
-              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sed sed feugiat
-                sagittis purus arcu. In
-                viverra massa sed dolor nisl, sit.</p>
+              <p class="paragraph">This is a madeup website that I made, originally this was a redesign of the old
+                website that I had made last year.</p>
             </div>
 
             <div class="smallproject__icon">
-              <a href="#" target="_blank">
+              <a href="https://katieholmes.netlify.app/" target="_blank" class="smallproject__icon--link"
+                title="Link to go to katie holmes website">
                 <img src="../src/assets/linkvg.svg" alt="link to site icon">
               </a>
             </div>
@@ -168,17 +179,17 @@
 
 
           <!-- SMALL PROJECT START -->
-          <article class="smallproject">
+          <article class="smallproject" role="button" tabindex="0">
 
             <div class="smallproject__left">
-              <h4 class="heading--4">Katie Holmes Website</h4>
-              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sed sed feugiat
-                sagittis purus arcu. In
-                viverra massa sed dolor nisl, sit.</p>
+              <h4 class="heading--4">Simpledot</h4>
+              <p class="paragraph">This was a fun website that I made for highlighting the importance of simplicity in a
+                design, it tackles why its important and examples to follow.</p>
             </div>
 
             <div class="smallproject__icon">
-              <a href="#" target="_blank">
+              <a href="https://simpledot.netlify.app/" target="_blank" class="smallproject__icon--link"
+                target="A website that highlights the simplicity on design">
                 <img src="../src/assets/linkvg.svg" alt="link to site icon">
               </a>
             </div>
@@ -187,17 +198,17 @@
 
 
           <!-- SMALL PROJECT START -->
-          <article class="smallproject">
+          <article class="smallproject" role="button" tabindex="0">
 
             <div class="smallproject__left">
-              <h4 class="heading--4">Katie Holmes Website</h4>
-              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sed sed feugiat
-                sagittis purus arcu. In
-                viverra massa sed dolor nisl, sit.</p>
+              <h4 class="heading--4">Covid-19 Tracker</h4>
+              <p class="paragraph">A web application that get's the global status of the covid-19, you could search for
+                a specific country and results back.</p>
             </div>
 
             <div class="smallproject__icon">
-              <a href="#" target="_blank">
+              <a href="https://covidtracker19.netlify.app/" target="_blank" class="smallproject__icon--link"
+                target="A covid tracker app that gets global status">
                 <img src="../src/assets/linkvg.svg" alt="link to site icon">
               </a>
             </div>
@@ -206,60 +217,22 @@
 
 
           <!-- SMALL PROJECT START -->
-          <article class="smallproject">
+          <article class="smallproject" role="button" tabindex="0">
 
             <div class="smallproject__left">
-              <h4 class="heading--4">Katie Holmes Website</h4>
-              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sed sed feugiat
-                sagittis purus arcu. In
-                viverra massa sed dolor nisl, sit.</p>
+              <h4 class="heading--4">Lyrics Search</h4>
+              <p class="paragraph">A web application made with Plain JavaScript, you can search for an artist or a song
+                that you love and able to view the lyrics.</p>
             </div>
 
             <div class="smallproject__icon">
-              <a href="#" target="_blank">
+              <a href="https://gallant-jang-863e66.netlify.app/" target="_blank" class="smallproject__icon--link"
+                title="A lyrics search project">
                 <img src="../src/assets/linkvg.svg" alt="link to site icon">
               </a>
             </div>
           </article>
           <!-- SMALL PROJECTE ND -->
-
-
-          <!-- SMALL PROJECT START -->
-          <article class="smallproject">
-
-            <div class="smallproject__left">
-              <h4 class="heading--4">Katie Holmes Website</h4>
-              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sed sed feugiat
-                sagittis purus arcu. In
-                viverra massa sed dolor nisl, sit.</p>
-            </div>
-
-            <div class="smallproject__icon">
-              <a href="#" target="_blank">
-                <img src="../src/assets/linkvg.svg" alt="link to site icon">
-              </a>
-            </div>
-          </article>
-          <!-- SMALL PROJECTE ND -->
-
-
-          <!-- SMALL PROJECT START -->
-          <article class="smallproject">
-
-            <div class="smallproject__left">
-              <h4 class="heading--4">Katie Holmes Website</h4>
-              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sed sed feugiat
-                sagittis purus arcu. In
-                viverra massa sed dolor nisl, sit.</p>
-            </div>
-
-            <div class="smallproject__icon">
-              <a href="#" target="_blank">
-                <img src="../src/assets/linkvg.svg" alt="link to site icon">
-              </a>
-            </div>
-          </article>
-          <!-- SMALL PROJECTE END -->
 
         </section>
       </div>
@@ -277,7 +250,7 @@
             posuere. Id at nunc vulputate vitae donec ut etiam sodales nunc. Eget elit vitae viverra quis nulla aliquam
             venenatis congue.</p>
 
-          <button class="btn btn--primary mt-1">
+          <button class="btn btn--primary mt-3">
             <a href="mailto:judelaurentetejada@gmail.com" target="_blank">
               Get in touch
             </a>
