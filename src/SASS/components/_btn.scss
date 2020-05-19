@@ -8,7 +8,10 @@
   transition: 200ms ease;
   &--primary {
     background-color: var(--primary-color);
-    color: #fff;
+
+    a {
+      color: #fff;
+    }
 
     &:hover {
       opacity: 0.7;
@@ -20,9 +23,10 @@
     border: 1px solid currentColor;
 
     &:hover {
-      border: 1px solid #fff;
       background: var(--primary-color);
-      color: #fff;
+      a {
+        color: #fff;
+      }
     }
   }
   &--outline {
@@ -37,11 +41,11 @@
     left: 50%;
     transform: translateX(-50%);
     transition: 200ms ease;
+  }
 
-    &:focus-within,
-    &:focus,
-    &:hover {
-      margin-bottom: 0.4em;
-    }
+  &:focus-within,
+  &:focus,
+  &:hover {
+    margin-bottom: 0.4em;
   }
 }

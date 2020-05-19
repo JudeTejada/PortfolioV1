@@ -1,5 +1,7 @@
 .header {
   padding-top: 8.5rem;
+  position: relative;
+  min-height: 90vh;
 
   &__content {
     display: flex;

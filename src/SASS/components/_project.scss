@@ -1,0 +1,37 @@
+.project {
+  margin-top: 5em;
+  grid-column: 4 / 12;
+  display: flex;
+
+  &__photo {
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__content {
+    margin-left: 6em;
+  }
+  &__btns {
+    margin-top: 5em;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 4em;
+  }
+}
+
+.smallproject {
+  align-items: center;
+  margin-top: 5em;
+  grid-column: 4 / 12;
+
+  display: grid;
+  grid-template-columns: auto 200px;
+
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

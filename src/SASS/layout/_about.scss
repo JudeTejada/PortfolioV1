@@ -1,0 +1,11 @@
+.about {
+  margin-top: 27vh;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  &__description {
+    margin-top: 5em;
+    grid-column: 4 / span 6;
+  }
+}

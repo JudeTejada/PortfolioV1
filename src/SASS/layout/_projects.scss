@@ -1,0 +1,18 @@
+.projects {
+  margin-top: 20vh;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.smallprojects {
+  margin-top: 20vh;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  &__left {
+    max-width: 40%;
+  }
+}

@@ -5,13 +5,15 @@
   color: var(--primary-color);
 }
 .heading--2 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   font-weight: 500;
   color: var(--secondary-color);
+  grid-column: 1 / -1;
 }
 .heading--4 {
   font-size: 3.4rem;
-  color: var(--dark-gray-3);
+  color: var(--tertiary-color);
+  grid-column: 10 / -1;
 }
 
 .heading--6 {
@@ -21,9 +23,10 @@
 }
 
 .paragraph {
+  font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.78;
-  color: var(--tertiary-color);
+  color: var(--dark-gray-2);
   &--hero {
     max-width: 46rem;
   }
