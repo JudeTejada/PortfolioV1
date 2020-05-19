@@ -1,6 +1,7 @@
 .heading--1 {
   font-size: 9.6rem;
   font-weight: 700;
+  line-height: 1;
   color: var(--primary-color);
 }
 .heading--2 {
@@ -10,7 +11,7 @@
 }
 .heading--4 {
   font-size: 3.4rem;
-  color: var(--dark-gray);
+  color: var(--dark-gray-3);
 }
 
 .heading--6 {
@@ -23,4 +24,7 @@
   font-size: 1.8rem;
   line-height: 1.78;
   color: var(--tertiary-color);
+  &--hero {
+    max-width: 46rem;
+  }
 }

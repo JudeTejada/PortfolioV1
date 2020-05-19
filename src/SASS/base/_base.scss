@@ -7,16 +7,35 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
+  overflow-x: hidden;
   line-height: 1.6;
   font-family: "Ubuntu", sans-serif;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  outline: none;
 }
 
 button {
   outline: none;
+  &::-moz-focus-inner {
+    border: 0;
+  }
 }
 
 ul {
   list-style: none;
+}
+
+main {
+  position: relative;
+  height: 100vh;
 }

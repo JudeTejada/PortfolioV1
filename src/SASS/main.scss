@@ -5,7 +5,12 @@
 
 //base
 @import "./base/base";
+@import "./base/util";
 
 //components
 @import "./components/headings";
 @import "./components/btn";
+
+//layout
+@import "./layout/nav";
+@import "./layout/header";

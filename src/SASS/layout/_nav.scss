@@ -1,0 +1,35 @@
+.nav {
+  padding-top: 1.8em;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    transition: 200ms ease-in;
+  }
+  &__logo {
+    font-size: 2.5rem;
+    font-weight: var(--secondary-color);
+  }
+  &__li:not(:last-child) {
+    margin-right: 2em;
+  }
+
+  &__link,
+  &__link:visited,
+  &__link:link {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--dark-gray);
+  }
+  &__link:hover,
+  &__link:active,
+  &__link:focus {
+    opacity: 0.4;
+  }
+}

@@ -1,4 +1,5 @@
 .btn {
+  outline: none;
   font-weight: 500;
   font-size: 1.6rem;
   font-family: inherit;
@@ -22,6 +23,25 @@
       border: 1px solid #fff;
       background: var(--primary-color);
       color: #fff;
+    }
+  }
+  &--outline {
+    margin-top: 3em;
+    text-align: center;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 200ms ease;
+
+    &:focus-within,
+    &:focus,
+    &:hover {
+      margin-bottom: 0.4em;
     }
   }
 }
