@@ -66,4 +66,10 @@
   font-size: 2.5rem;
   color: var(--primary-color);
   font-weight: var(--secondary-color);
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    color: red !important;
+  }
 }

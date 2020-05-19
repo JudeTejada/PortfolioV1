@@ -3,34 +3,45 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="Jude Tejada">
+  <meta name="keywords"
+    content="Jude Tejada, front-end developer, UI DESIGNER, ui/ux designer, freelance front-end developer, portfolio, filipino designer, filipino developer">
+  <meta name="description" content="Jude Tejada is a Front End Developer based in the Philippines.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jude Tejada | Front-End Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta property="og:locale" content="tl_PH">
+  <meta property="og:site_name" content="Jude Tejada Portfolio">
+  <meta property="og:description" content="Jude Tejada is a Front End Developer based in the Philippines.">
+  <link rel="preload" as="font" type="font" href="../src/fonts/ubuntu-v14-latin-regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font" href="../src/fonts/ubuntu-v14-latin-700.woff2" crossorigin>
+
+
 </head>
 
-<body class="dark">
+<body class="white">
 
   <main class="main">
     <div class="container">
       <!-- START OF NAV -->
       <nav class="nav">
-        <div class="nav__content">
-          <a href="#" class="logo" role="button" tabindex="0"> Jude Tejada</a>
+
+        <a href="/" class="logo" tabindex="0" aria-label="Home page"> Jude Tejada</a>
 
 
-          <ul class="nav__ul">
-            <li class="nav__li" role="navigation">
-              <a href="#about" class="nav__link" title="Link to the about page">About</a>
-            </li>
-            <li class="nav__li" role="navigation">
-              <a href="#projects" class="nav__link" title="link to my project page">Projects</a>
-            </li>
-            <div class="nav__darktheme">
-              <input type="checkbox" name="setTheme" id="darkTheme">
-              <label for="darkTheme"></label>
-            </div>
-          </ul>
-        </div> <!-- nav -- Content-->
+        <ul class="nav__ul">
+          <li class="nav__li" role="navigation">
+            <a href="#about" class="nav__link" title="Link to the about page">About</a>
+          </li>
+          <li class="nav__li" role="navigation">
+            <a href="#projects" class="nav__link" title="link to my project page">Projects</a>
+          </li>
+          <div class="nav__darktheme">
+            <input type="checkbox" name="setTheme" id="darkTheme" role="switch">
+            <label for="darkTheme"></label>
+          </div>
+        </ul>
+
       </nav>
       <!-- END OF NAV -->
       <header class="header" id="header">
@@ -78,8 +89,14 @@
         <!--PROJECT-->
         <section class="project">
           <figure class="project__photo">
-            <a href="https://fiddles.netlify.app/" target="_blank" title="Link that goes to fiddles project">
-              <img src="../src/assets/work1.jpg" alt="Fiddles Project" class="project__img">
+            <a href="https://fiddles.netlify.app/" target="_blank" title="Link that goes to fiddles project"
+              rel="noopener" rel="noreferrer">
+              <picture>
+                <source type="image/webp" srcset="../src/assets/work1.webp">
+                <source type="image/jpeg" srcset="../src/assets/work1.jpg">
+                <img src="../src/assets/work1.jpg" alt="Fiddles Project" class="project__img" loading="lazy">
+              </picture>
+
             </a>
 
           </figure>
@@ -92,12 +109,13 @@
 
             <div class="project__btns">
               <button class="btn btn--primary mr-1">
-                <a href="https://fiddles.netlify.app/" target="_blank" title="Link that goes to fiddles project">See
+                <a href="https://fiddles.netlify.app/" target="_blank" title="Link that goes to fiddles project"
+                  rel="noopener" rel="noreferrer">See
                   Live</a>
               </button>
               <button class="btn btn--secondary">
                 <a href="https://github.com/JudeTejada/Fiddles" target="_blank"
-                  title="Link that goes to fiddles github repository">View Repo</a>
+                  title="Link that goes to fiddles github repository" rel="noopener" rel="noreferrer">View Repo</a>
               </button>
             </div>
           </article>
@@ -107,8 +125,15 @@
         <!--PROJECT-->
         <section class="project">
           <figure class="project__photo">
-            <a href="https://moviefinder19.netlify.app/" target="_blank" title="Link that goes to movieFinder site">
-              <img src="../src/assets/work2.jpg" alt="Movie Library Project" class="project__img"></a>
+            <a href="https://moviefinder19.netlify.app/" target="_blank" title="Link that goes to movieFinder site"
+              rel="noopener" rel="noreferrer">
+              <a>
+                <source type="image/webp" srcset="../src/assets/work2.webp">
+                <source type="image/jpeg" srcset="../src/assets/work2.jpg">
+                <img src="../src/assets/work2.jpg" alt="Movie Library Project" class="project__img" loading="lazy">
+              </a>
+              </picture>
+
 
           </figure>
 
@@ -119,12 +144,12 @@
 
             <div class="project__btns">
               <button class="btn btn--primary mr-1">
-                <a href="https://moviefinder19.netlify.app/" target="_blank"
-                  title="Link that goes to movieFinder site">See Live</a>
+                <a href="https://moviefinder19.netlify.app/" target="_blank" title="Link that goes to movieFinder site"
+                  rel="noopener" rel="noreferrer">See Live</a>
               </button>
               <button class="btn btn--secondary">
                 <a href="https://moviefinder19.netlify.app/" target="_blank"
-                  title="link to go to movieFinder github repository">View Repo</a>
+                  title="link to go to movieFinder github repository" rel="noopener" rel="noreferrer">View Repo</a>
               </button>
             </div>
           </article>
@@ -135,8 +160,14 @@
         <!--PROJECT-->
         <section class="project">
           <figure class="project__photo">
-            <a href="https://findhub.netlify.app/" target="_blank" title="link to go to findhub live site">
-              <img src="../src/assets/work3.jpg" alt="Findhub Project" class="project__img">
+            <a href="https://findhub.netlify.app/" target="_blank" title="link to go to findhub live site"
+              `rel="noopener" ` or `rel="noreferrer" `>
+              <picture>
+                <source type="image/webp" srcset="../src/assets/work3.webp">
+                <source type="image/jpeg" srcset="../src/assets/work3.jpg">
+                <img src="../src/assets/work3.jpg" alt="Findhub Project" class="project__img" loading="lazy">
+              </picture>
+
             </a>
 
           </figure>
@@ -148,12 +179,14 @@
 
             <div class="project__btns">
               <button class="btn btn--primary mr-1">
-                <a href="https://findhub.netlify.app/" target="_blank" title="link to go to findhub live site">See
+                <a href="https://findhub.netlify.app/" target="_blank" title="link to go to findhub live site"
+                  rel="noopener" rel="noreferrer">See
                   Live</a>
               </button>
               <button class="btn btn--secondary">
                 <a href="https://github.com/JudeTejada/JavaScript-Web-Projects/tree/master/githubProfile"
-                  target="_blank" title="link to go to findhub github repository">View Repo</a>
+                  target="_blank" title="link to go to findhub github repository" rel="noopener" rel="noreferrer">View
+                  Repo</a>
               </button>
             </div>
           </article>
@@ -180,7 +213,7 @@
 
             <div class="smallproject__icon">
               <a href="https://katieholmes.netlify.app/" target="_blank" class="smallproject__icon--link"
-                title="Link to go to katie holmes website">
+                title="Link to go to katie holmes website" rel="noopener" rel="noreferrer">
                 <img src="../src/assets/linkvg.svg" alt="link to site icon">
               </a>
             </div>
@@ -199,7 +232,7 @@
 
             <div class="smallproject__icon">
               <a href="https://simpledot.netlify.app/" target="_blank" class="smallproject__icon--link"
-                target="A website that highlights the simplicity on design">
+                target="A website that highlights the simplicity on design" `rel="noopener" rel="noreferrer">
                 <img src="../src/assets/linkvg.svg" alt="link to site icon">
               </a>
             </div>
@@ -218,7 +251,7 @@
 
             <div class="smallproject__icon">
               <a href="https://covidtracker19.netlify.app/" target="_blank" class="smallproject__icon--link"
-                target="A covid tracker app that gets global status">
+                target="A covid tracker app that gets global status" rel="noopener" rel="noreferrer">
                 <img src="../src/assets/linkvg.svg" alt="link to site icon">
               </a>
             </div>
@@ -237,7 +270,7 @@
 
             <div class="smallproject__icon">
               <a href="https://gallant-jang-863e66.netlify.app/" target="_blank" class="smallproject__icon--link"
-                title="A lyrics search project">
+                title="A lyrics search project" rel="noopener" rel="noreferrer">
                 <img src="../src/assets/linkvg.svg" alt="link to site icon">
               </a>
             </div>
@@ -292,6 +325,8 @@
 
 
   <script src="../src/JS/main.js" defer></script>
+
+
 </body>
 
 </html>
