@@ -28,6 +28,14 @@
     @media (max-width: $bp-medium) {
       width: 30%;
     }
+
+    @media (max-width: $bp-small) {
+      width: 22%;
+    }
+
+    @media (max-width: $bp-smallest) {
+      width: 27%;
+    }
   }
 
   &__li:not(:last-child) {

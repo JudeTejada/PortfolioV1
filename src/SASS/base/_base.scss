@@ -23,6 +23,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   background: var(--bg);
   margin-bottom: 2em;
+  transition: background 200ms ease-in-out, color 500ms ease-in-out;
 }
 ::-moz-selection,
 ::selection {
