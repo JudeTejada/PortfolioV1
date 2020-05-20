@@ -1,5 +1,5 @@
 .header {
-  padding-top: 8.5rem;
+  padding-top: 14.5em;
   position: relative;
   min-height: 90vh;
 
@@ -10,6 +10,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 80%;
+    max-width: 70%;
+
+    @media (max-width: $bp-small) {
+      max-width: 100%;
+    }
   }
 }
