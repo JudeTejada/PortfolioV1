@@ -8,4 +8,4 @@ Made with:
 
 It uses Parcel for bundling all my files
 
-[link](https://www.notion.so/Portfolio-Case-Study-f051df9827cb4d748a4e9436e0deddec)to Case Study
+[link](https://www.notion.so/Portfolio-Case-Study-f051df9827cb4d748a4e9436e0deddec) to Case Study
