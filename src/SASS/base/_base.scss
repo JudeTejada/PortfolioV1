@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 70.5%;
   scroll-behavior: smooth;
-
-  @media (max-width: $bp-largest) {
-    font-size: 62.5%;
+  font-size: 62.5%;
+  @media (min-width: 2000px) {
+    font-size: 70%;
   }
+
   @media (max-width: $bp-medium) {
     font-size: 50%;
   }
