@@ -3,7 +3,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-
+  transition: 200ms ease;
   background: var(--bg);
   z-index: 1000;
   max-width: 90%;

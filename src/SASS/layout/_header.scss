@@ -1,12 +1,11 @@
 .header {
-  padding-top: 10.5em;
   position: relative;
-  min-height: 100vh;
-  transition: 2000ms ease-in;
+
   @media (max-width: $bp-small) {
     min-height: 80vh;
   }
   &__content {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,9 +1,5 @@
 .about {
-  margin-top: 27vh;
-
-  @media (max-width: $bp-large) {
-    margin-top: 17vh;
-  }
+  margin-top: 15vh;
   &__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
